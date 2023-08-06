@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+<h1>TIME</h1>
+<p><span id="san">00</span>:<span id="msan">00</span></p>
+<button id="start">start</button>
+<button id="stop">stop</button>
+<button id="reset">reset</button>
+   </div> 
+   <script>
+var san=00;
+var msan=00;
+var asan=document.getElementById("san");
+var amsan=document.getElementById("msan");
+var star=document.getElementById("start");
+var sto=document.getElementById("stop");
+var rese=document.getElementById("reset");
+var interval;
+star.onclick=function () {
+
+    clearInterval(interval);
+    interval=setInterval(timer,10)
+    
+}
+sto.onclick=function(){
+   
+    clearInterval(interval);
+}
+
+
+rese.onclick=function(){
+clearInterval(interval);
+san="00";
+msan="00"
+asan.innerHTML=san;
+amsan.innerHTML=msan;
+}
+function timer(){
+msan++;
+if(msan<=9){
+amsan.innerHTML="0"+msan;
+}
+if(msan>9){
+amsan.innerHTML= msan;
+}
+if(msan>99){
+console.log("san");
+san++;
+asan.innerHTML="0"+san;
+msan=0;
+amsan.innerHTML="0"+ 0;
+
+}
+if(san>9){
+asan.innerHTML=san;
+
+}
+
+
+
+
+
+}
+   </script>
+</body>
+</html>

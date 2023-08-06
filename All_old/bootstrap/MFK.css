@@ -1,0 +1,122 @@
+@media(max-width: 768px){
+  .img img{
+    height: 70% !important;
+  }    
+  .boxs{
+    height: 45% !important;
+  }  
+  .box-container{
+    height: 30% !important;
+  }
+  .font{
+    font-size: 50% !important;
+    margin: 0 !important;
+    padding: 0% 0% 0% 0%!important;
+  }
+  .font i{
+    width: 10% !important;
+    margin-right: 0px !important;
+    padding-right: 0.1px !important;
+  }
+  .three-box{
+    height: 80% !important;
+  }
+  .three-box div p{
+    font-size: 70%;
+  }
+  .three-pic div img{
+    height: 80% !important;
+    margin-bottom: 10%;
+  }
+  .input input{
+    height: 10% !important;
+    width: 50% !important;
+  }
+  .foot button {
+    width: 40%;
+    height: 10%;
+  }
+  .abtn{
+    width: 40% !important;
+  }
+  .left-side{
+    columns: 3;
+  }
+}
+@media(max-width: 700px){
+  .input input{
+    height: 10% !important;
+    width: 60% !important;
+  }
+  .foot button {
+    width: 30%;
+    height: 10%;
+    font-size: 55% !important;
+  }
+}
+@media(max-width: 700px){
+  .headerli li a{
+font-size: 70% !important;
+  } 
+  .btn-three button {
+    font-size: 70%;
+    height: 58% !important;
+  }
+  .box-ten div{
+    width: 30% !important;
+    height: 80% !important;
+    flex-wrap: wrap;
+  }
+  .box-ten div div div img{
+    width: 1000% !important;
+    height: 90% !important;
+  }
+  .box-ten h3{
+    font-size: 70% !important;
+  }
+  .box-ten p{
+    font-size: 70% !important;
+  }
+   .box-ten .div-end {
+    width: 100% !important;
+  }
+  .box-ten .div-end div{
+    width: 50% !important;
+    padding: 2% 2% 0 2% !important;
+  }
+  .three-box{
+    height: 70% !important;
+  }
+  .three-box div p{
+    font-size: 50%;
+  }
+  .three-box div div div p{
+    font-size: 50% !important;
+  }
+  .three-box div div div img{
+    width: 200% !important;
+    height: 200% !important;
+  }
+  .three-pic div img{
+    height: 70% !important;
+  }
+  .three-pic div div {
+    font-size: 80% !important;
+  }
+  .footer-part div p {
+    font-size: 70% !important;
+  }
+  .footer-part div p i{
+    font-size: 70% !important;
+  }
+  .icon i{
+    font-size: 60%;
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+    padding-left: 6px;
+  }
+  .div-icon{
+    margin-right: 20px !important;
+  }
+}

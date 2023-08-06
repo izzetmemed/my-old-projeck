@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+        }
+        .box1{
+               background-color: red;
+             position: relative;
+             top:50px;
+             left: 20px;
+             z-index: 1;
+
+        }
+        .box2{
+            background-color: green;
+            position: absolute;
+            z-index: 2;
+           
+        } */
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: relative;
+            transform: rotate(45deg);
+        }
+        .inner{
+            position: absolute;
+            width: 50%;
+            background-color: rgb(70, 44, 10);
+           
+            
+        }
+        h1{
+            text-align: center;
+            transition: 5s ease-in-out;
+        }
+        h1:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+ <div class="box">
+    <div class="inner"></div>
+ </div>
+ <h1>Codelandia</h1>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big .small img{
+        width: 100px;
+        height: 100px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+        .head{
+            background-color: cornflowerblue;
+             border-radius: 20px;
+             width: 400px;
+             height: 400px;
+             padding: 20px;
+        }
+        .head h1{
+            text-transform: uppercase;
+            font-size: 30px;
+            white-space: 5px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .big{
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 0;
+            margin-left: 100px;
+        }
+        .big .small{
+            display: flex;
+            gap: 90px;
+            transform: translateX(200px);
+            transition: all 0.3 ease-in-out;
+        }
+        .iz{
+            text-align: center;
+            width: 150px;
+            height: 40px;
+            overflow: hidden;
+            background-color: black;
+            color: antiquewhite;
+            border-radius: 30px;
+        margin-left: 120px;
+        }
+        .iz .oz{
+            transform: translateY(80px);
+            transition: all 0.3s ease-in-out;
+        }
+        .stars{
+            gap: 80px;
+    margin-top: 70px;
+    margin-left: 30px;
+        }
+        .stars i{
+            font-size: 60px;
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="head">
+<h1>Customer Feedback</h1>
+<div class="big">
+<div class="small">
+    <img src="https://c8.alamy.com/comp/2F7BG0F/emoji-emoticon-with-a-sad-or-concerned-expression-2F7BG0F.jpg" alt="">
+    <img src="https://previews.123rf.com/images/alvincadiz/alvincadiz1604/alvincadiz160400358/56426319-vector-illustration-of-smiley-emoticon-sad-face.jpg" alt="">
+    <img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/smiling-face.png" alt="">
+    <img src="https://www.thenationalnews.com/resizer/tp37FMuMGtoXvWA7Km9XZ0Dzun4=/arc-photo-thenational/eu-central-1-prod/public/VBNNUCG3YUTHC3WQNEW5UXQ2GQ.jpg" alt="">
+    <img src="https://img.favpng.com/16/1/5/happy-face-emoji-png-favpng-vbi9Sg32ZJdDqCrQnMf9W1kvA.jpg" alt="">
+</div>
+</div>
+
+<div class="iz">
+    <div class="oz">
+<h2>very poor</h2>
+<h2>poor</h2>
+<h2>normal</h2>
+<h2>good</h2>
+<h2>excellent</h2>
+    </div>
+</div>
+<div class="stars">
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+</div>
+    </div>
+    <script>
+
+        const pic=document.querySelector(".small");
+        const word=document.querySelector(".oz");
+        const stars=document.querySelector(".stars");
+
+        stars[0].addEventListener("click",()=>{
+            stars[0].style.color="gold";
+            stars[1].style.color="black";
+            stars[2].style.color="black";
+            stars[3].style.color="black";
+            stars[4].style.color="black";
+            pic.style.transform="translateX(0px)"
+            word.style.transform="translateY(0px)"
+        })
+    </script>
+</body>
+</html>

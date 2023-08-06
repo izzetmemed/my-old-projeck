@@ -1,0 +1,57 @@
+.left-menu{
+
+  
+}
+.left-menu-ul{
+    display: block;
+     position: absolute;
+  z-index: 55; 
+}
+.left-menu-li{
+    display: none!important;
+    background-color: aliceblue;
+    width: 123% !important;
+    
+}
+.browse-li{
+    width: 123% !important;
+}
+.left-menu-ul:hover .left-menu-li{
+    display: block !important;
+    
+}
+
+.writing-on-img{
+    display: flex;
+    flex-direction: row;
+    top: 60%;
+    left: 15%;
+    width: 75%;
+}
+.writing-on-img li{
+    width: 120% !important;
+    list-style-type: none;
+
+}
+.writing-on-img li img{
+    width: 50%;
+    height: 50%;
+}
+.writing-shop{
+    position: absolute;
+    z-index: 5;
+    top: 20%;
+    left: 45%;
+}
+
+.writing-shop span{
+    font-size: 400%;
+    font-weight: bold;
+    color: white;
+}
+.for-index{
+    z-index: 300;
+}
+.right-second-nav ul li i{
+    padding: 30% 0% 1% 26% !important;
+}

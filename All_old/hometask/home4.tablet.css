@@ -1,0 +1,23 @@
+@media (max-width: 768px){
+   
+    .aside2,.aside3,.aside4,.aside5{
+        display: none;
+    }
+    .left-side,.aside1{
+        width: 100%;
+    
+    }
+    .right-side{
+        width: 100%;
+    }
+    .img{
+        width: 20%;
+    }
+    .page-2{
+        height: 180%;
+    }
+    .page-2-div{
+        margin-top: 100px;
+
+     }
+}

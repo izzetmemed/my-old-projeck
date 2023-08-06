@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.counter{
+width: 400px;
+background-color: azure;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+border-radius: 10px;
+box-shadow: 5px 5px 5px darkorange;
+}
+.bos{
+  width: 100%;
+}
+.bos input{
+  width: 100%;
+  background-color: rgb(64, 226, 43);
+  text-align: center;
+  font-size: 35px;
+
+}
+.bos input::placeholder{
+  color: rgb(250, 39, 11);
+}
+.button{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 20px;
+margin-top: 40px;
+}
+.button input[type="button"]{
+font-size: 20px;
+padding: 17px;
+background-color: gold;
+color: rgb(10, 107, 31);
+border-radius: 5px;
+cursor: pointer;
+}
+input[type="button"]#equal{
+grid-row: span 2;
+background-color: deeppink;
+}
+input[type="button"][value="0"]{
+  grid-column: span 2;
+}
+</style>
+</head>
+<body>
+  <div class="counter">
+    <div class="bos">
+      <input type="text" placeholder="0" id="input" disabled/>
+    </div>
+<div class="button">
+<input type="button" value="C" id="clear"/>
+<input type="button" value="DEL" id="erase"/>
+<input type="button" value="/" class="inputbutton"/>
+<input type="button" value="*" class="inputbutton"/>
+
+<input type="button" value="7" class="inputbutton"/>
+<input type="button" value="8" class="inputbutton"/>
+<input type="button" value="9" class="inputbutton"/>
+<input type="button" value="-" class="inputbutton"/>
+
+<input type="button" value="6" class="inputbutton"/>
+<input type="button" value="5" class="inputbutton"/>
+<input type="button" value="4" class="inputbutton"/>
+<input type="button" value="+" class="inputbutton"/>
+
+<input type="button" value="1" class="inputbutton"/>
+<input type="button" value="2" class="inputbutton"/>
+<input type="button" value="3" class="inputbutton"/>
+
+<input type="button" value="=" id="equal"/>
+<input type="button" value="0" class="inputbutton"/>
+<input type="button" value="." class="inputbutton"/>
+</div>
+  </div>
+  <script>
+ equal.addEventListener("click", ()=> {
+  document.getElementById("input").value;
+  
+})
+let button_input=document.querySelectorAll(".inputbutton");
+let input=document.getElementById("input");
+let equal=document.getElementById("equal");
+let clear=document.getElementById("clear");
+let erase=document.getElementById("erase");
+
+window.onload=()=>{
+  input.value="";
+}
+
+button_input.forEach((button_class)=>{
+button_class.addEventListener("click", ()=>{
+if(equal==1) {
+input.value="";
+equal_presssed==0;
+}
+input.value=button_class.value;
+})
+})
+equal.addEventListener("click",()=>{
+  try{
+    let solu=eval(input.value)
+  
+  if(Number.isInteger(solu)){
+    input.value=solu;
+  }
+  else{
+    input.value=solu.toFixed(2);
+  }}
+  catch(err){
+    alert("something is wrong")
+  }
+})
+clear.addEventListener("click", ()=>{
+  input.value="";
+})
+erase.addEventListener("click", ()=>{
+  input.value=input.value.substr(0,input.value.length-1);
+});
+  </script>
+</body>
+</html>

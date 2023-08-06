@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.big{
+transform: translate(50%,50%);
+background-color: aqua;
+height: 180px;
+width: 250px;
+
+
+}
+.random{
+background-color: blueviolet;
+height: 20px;
+width: 100px;
+transform: translate(80px,63px);
+}
+.yeni{
+height: 20px;
+width: 60px;;
+transform: translate(150px,30px);
+}
+
+.put{
+transform: translate(3px,50px);
+
+}
+.okay{
+    transform: translate(-4px, 50px);
+width: 60px;
+}
+.oz{
+    transform: translate(80px,40px);
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+  <div class="big">
+<p class="random"></p>>
+<button class="yeni">refresh</button>
+<input class="put" required maxlength="6" size="7" placeholder="writing..."/>
+<button class="okay">ok</button>
+<p class="oz"></p>
+</div>
+<script>
+let yaz=document.querySelector(".random");
+let yenile=document.querySelector(".yeni");
+let put=document.querySelector(".put");
+let ok=document.querySelector(".okay");
+let oz=document.querySelector(".oz")
+
+const iz=['a','b','c','d','e','f',1,2,3]
+yenile.addEventListener("click",()=>{
+    yaz.innerText="";
+    for(let i=0;i<6;i++){
+yaz.innerText+=iz[Math.floor(Math.random()*iz.length)]
+}
+yaz.innerText=yaz.innerText.split("").join(" ")
+})
+
+ok.addEventListener("click",()=>{
+if(yaz.value=put.value){
+oz.innerHTML="you arent a robot"
+
+}else{
+    oz.innerHTML="robot"
+}
+
+
+})
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+<style>
+body{
+display: flex;
+align-items: center;
+justify-content:center;
+min-height: 200px;
+background-color: darkorange;
+}
+.big{
+background-color: rgb(32, 46, 253);
+border-radius: 5px;
+border: 3px solid salmon;
+
+
+}
+.lisBig{
+   
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="big">
+    <div class="iz"><input class="oz" placeholder="Enter..."  type="password"/> 
+       
+    </div>
+   
+<div class="uz"><p>Password should be ...</p></div>
+<div class="list">
+<ul class="listBig">
+<li class="listSmall">min 8 letter</li>
+<li class="listSmall"> 1 number</li>
+<li class="listSmall">1 lowercase</li>
+<li class="listSmall">1 symbol</li>
+<li class="listSmall">1 upperCase</li>
+</ul>
+</div>
+    </div>
+
+    
+</body>
+</html>

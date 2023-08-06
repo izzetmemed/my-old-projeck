@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+  <div class="bas">
+<input id="iz" onkeyup="search1()" type="text" placeholder="searching" name="search">
+
+<ul class="big">
+<li class="small" >cat</li>
+<li class="small" >dog</li>
+<li class="small"  >lion</li>
+<li class="small"  >tager</li>
+<li class="small">fox</li>
+</ul>
+  </div>
+<script>
+function search1() {
+let input=document.getElementById('iz').value;
+input=input.toLowerCase();
+let x=document.getElementsByClassName('small');
+
+for( i=0; i<x.length; i++){
+    if(!x[i].innerHTML.toLowerCase().includes(input)){
+x[i].style.display="none";
+    } 
+    else{
+        x[i].style.display="list-item";
+    }
+}
+
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>get location</button>
+
+    <script>
+const button= document.querySelector("button");
+button.addEventListener("click",()=>{
+    navigator.geolocation.getCurrentPosition(position,()=>{
+        const {latitude, longitude}=position.coords;
+        const url='http://nominatim.openstreetmap.org/reverse?json_callback=cb&format=json&lat=${latitude}&lon=${longitude}'
+        fetch(url).than(res=>res.json().than(data=>{
+            console.table(data.address);
+        })).catch(()=>{
+            console.log("error");
+        })
+    })
+})
+
+
+
+
+    </script>
+</body>
+</html>

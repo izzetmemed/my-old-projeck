@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: aquamarine;
+}
+.big{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+}
+.iz .oz{
+    position: absolute;
+    top: 100px;
+    left:230px;
+height: 30px;
+width: 200px;
+border: 1px solid seagreen;
+border-radius: 9px;
+background-color: rgb(27, 23, 111);
+font-size: 18px;
+padding-left: 7px;
+}
+.iz .uz{
+position: absolute;
+top: 105px;
+left: 410px;
+border: 1px solid skyblue;
+border-radius: 50%;
+background-color: aquamarine;
+color: black;
+display: flex;
+justify-content: center;
+cursor:cell;
+
+}
+.ez {
+background-color: rgb(12, 99, 26);
+transform: translate(53px,140px);
+height: 30px;
+width: 200px;
+border: 1px solid sandybrown;
+border-radius: 10px;
+cursor: pointer;
+display: none;
+}
+.ez .az{
+padding: 40px;
+font-size: 20px;
+
+}
+.ez .zz{
+border: 1px solid silver;
+font-size: 15px;
+border-radius: 50%;
+margin: 10px;
+background-color: blue;
+padding: 3px;
+}
+.uz.fade{
+transform: rotate(-180deg);
+}
+.ez.fade{
+    display: block;
+}
+    </style>
+</head>
+<body>
+   <div class="big">
+<div class="iz">
+<span class="oz">select it</span>
+<span class="uz">\/</span>
+</div>
+<div class="ez">
+  <span class="zz">+</span>  
+  <span class="az">HTML</span>
+  <span class="zz">+</span>  
+  <span class="az">HTFB</span>
+  <span class="zz">+</span>  
+  <span class="az">HFDA</span>
+  <span class="zz">+</span>  
+  <span class="az">HREA</span>
+</div>
+</div> 
+
+<script>
+ let firl=document.querySelector(".uz");
+let ezel=document.querySelector(".ez")
+
+
+ firl.addEventListener("click",()=>{
+    firl.classList.toggle("fade");
+
+ })
+
+
+</script>
+
+</body>
+</html>

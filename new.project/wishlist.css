@@ -1,0 +1,9 @@
+.writing-whistlist{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: 1;
+    color: white;
+    font-size: 400%;
+    font-weight: 900;
+}

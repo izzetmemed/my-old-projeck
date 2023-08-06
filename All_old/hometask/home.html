@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color:rgb(230, 235, 225);
+            color: black;
+        }
+        .big{
+            position: relative;
+            width: 80%;
+            height: 80%;
+            top: 50px;
+            left: 70px;
+        }
+        .account{
+            background-color: white;
+            width: 40%;
+            height: 70%;
+            border-radius: 5px;
+            position: absolute;
+            left:300px;
+            top:20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      
+        }
+        .header{
+            position: absolute;
+            top: 20px;
+            width: 50%;
+            height: 50%;
+            font-size: 15px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .head{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: blue;
+        }
+        .form{
+            position: absolute;
+            top: 10px;   
+            left: 10px;
+        }
+        .put{
+            height: 25px;
+            width: 200px;
+            border-radius: 5px;
+            border: 0.4px solid gainsboro;
+            margin-bottom: 5px;
+            background-color: rgb(209, 226, 206);
+            padding-left: 7px;
+            outline: none;
+        }
+        .icon{
+            position: absolute;
+            top: 38px;
+            left: 180px;
+            font-size: 10px;
+        }
+        .btn1{
+            height: 25px;
+            width: 200px;
+            margin-top: 5px;
+            margin-bottom:5px ;
+            background-color: hsl(216, 95%, 57%);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        .text1{
+            text-align: center;
+            font-size: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-bottom: 5px;
+            color: blue;
+        }
+        .btn2{
+            position: absolute;
+            left: 50px;
+            height: 25px;
+            width: 100px;
+            margin-top: 5px;
+            margin-bottom:5px ;
+            background-color: rgb(50, 199, 36);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-size: 10px;
+            font-weight: 10px;
+            margin-top: 10px;
+        }
+        .open{
+            display: none;
+        }
+       .put:focus {
+            border:1px solid rgb(98, 98, 255);
+        }
+        ::placeholder{
+            font-size: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="big">
+            <div class="header">
+                <h1 class="head">
+                    facebook
+                </h1>
+                <div class="text">
+                    Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı sağlar.
+                </div>
+            </div>
+            <div class="account">
+                <div class="form">
+                    <input class="put put1" type="text" placeholder=" E-post və ya Telefon nümarsı " >
+                    <input class="put put2" type="password" placeholder=" Şifre">
+                        <div class="icon open"><i class="fa-regular fa-eye"></i></div>
+                        <div class="icon close"><i class="fa-regular fa-eye-slash"></i></div>
+                        <button class="btn1" type="button">Giriş Yap</button>
+                        <p class="text1">Şifrenimi unutdun?</p>
+                    <hr>
+                    <button class="btn2"type="button">Yeni hesab oluştur</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const input=document.querySelector(".put2")
+        const openi=document.querySelector(".open");
+        const closei=document.querySelector(".close");
+        closei.addEventListener("click",()=>{
+            closei.style.display="none";
+            openi.style.display="block";
+            input.type="text";
+        })
+        openi.addEventListener("click",()=>{
+            openi.style.display="none";
+            closei.style.display="block";
+            input.type="password";
+        })
+        
+    </script>
+</body>
+
+</html>

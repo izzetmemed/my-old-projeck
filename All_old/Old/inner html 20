@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(189, 224, 213);
+ }
+.iz{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.iz .uz{
+font-size: 50px;
+position: absolute;
+color: red;
+opacity: 0;
+}
+.uz.heart{
+    animation: animate 0.8s linear forwards;
+}
+@keyframes animate{
+30%{
+    font-size: 80px;
+    opacity: 1;
+}
+50%{
+    font-size: 80px;
+    opacity: 1;
+    color: black;
+}
+
+70%{
+    font-size: 90px;
+    opacity: 0.6;
+    color: rgb(14, 18, 252);
+}
+90%{
+    font-size: 80px;
+    opacity: 1;
+    color: rgb(247, 8, 8);
+}
+
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="iz">
+        <span class="uz">nnngvv</span>
+    </div>
+    <script>
+const big=document.querySelector(".iz");
+const small=document.querySelector(".uz");
+
+big.addEventListener("dblclick",(e)=>{
+ let xValue=e.clientX-e.target.offsetLeft;
+ let yValue=e.clientY-e.target.offsetTop;
+
+small.style.left=`${xValue}px`;
+small.style.top=`${yValue}px`;
+
+small.classList.add("heart");
+setTimeout(()=>{
+small.classList.remove("heart")
+
+},1000)
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./blog.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="blur">
+        <div class="header m-0 m-auto">
+            <div class="little-nav width-92 d-flex justify-content-between m-auto">
+                <div class="left-section d-flex">
+                    <div class="section-item news-content">
+                        <a href="#" onclick="toggle()"><i class="fa-regular fa-envelope"></i>NEWSLETTER</a>
+
+                    </div>
+                    <div class="section-item ps-2">
+                        <a href="./contact.html">Contact us</a>
+                    </div>
+                    <div class="section-item ps-2">
+                        <a href="#">Faqs</a>
+                    </div>
+                    <div class="section-item item-free ps-2">
+                        <span>FREE SHIPPING FOR ALL ORDERS OF $150</span>
+                    </div>
+                </div>
+                <div class="nav-right d-flex align-items-center">
+                    <div class="section-item">
+                        <a href="#" class="item-box">
+                            <i class="fa-solid fa-shuffle mt-1 mx-1 me-2"></i>
+                            Compare
+                        </a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" class="item-box">
+                            <i class="fa-regular fa-heart mt-1 mx-1 me-2"></i>
+                            WishList
+                        </a>
+                    </div>
+                    <div class="section-item item-free ps-2">
+                        <a href="#" class="item-box"> Login/Register </a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav d-flex justify-content-between m-auto width-92">
+                <ul class="navbar-list list-unstyled d-flex mt-2">
+                    <a href="#"><img src="./imgs/wood-logo-dark.svg" alt="" class="py-4" /></a>
+                    <li class="navbar-items ms-4">
+                        <div class="dropdown">
+                            <a href="#" class="border-0" type="button" id="dropdownMenuButton"
+                                data-mdb-toggle="dropdown" aria-expanded="false">Home<i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <!-- <ul
+                      class="dropdown-menu w-100 mt-5"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul> -->
+                            <div class="dropdown-home ">
+                                <div class="row dd-home mt-3">
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-1.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-2.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-3.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-4.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-5.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-6.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-7.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-8.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-9.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <div class="w-20 dd-img-box me-4">
+                                        <a href="#" class="mx-0 mx-auto text-center"><img src="./imgs/home-10.jpg"
+                                                alt="" /><span
+                                                class="d-flex text-capitalize justify-content-center">Demo
+                                                Default</span></a>
+                                    </div>
+                                    <a href="demossss"
+                                        class="btn btn-success py-3 fw-bold text-light mx-0 mx-auto demo-count w-auto px-5 ">
+                                        View all demos
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="navbar-items ms-4">
+                        <div class="dropdown">
+                            <a href="#" class="border-0" type="button" id="dropdownMenuButton"
+                                data-mdb-toggle="dropdown" aria-expanded="false">Shop<i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-shop">
+                                <div class="d-flex dd-shop mt-3">
+                                    <ul class="shop-page-list shop-page-list-items list-unstyled bg-secondary ps-3">
+                                        <li class="shop-page-list-item bg-light">
+                                            <a href="#" class="text-capitalize fw-bold fs-5">Shop pages<i
+                                                    class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="shop-page-list-item bg-success">
+                                            <a href="#" class="text-capitalize fw-bold fs-5">Product pages<i
+                                                    class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="shop-page-dd d-flex">
+                                        <div class="col-8 py-2">
+                                            <div class="row">
+                                                <div class="col-6 shop-layout pb-2">
+                                                    <p class="text-uppercase px-4 pt-2 shop-layout-text-style">
+                                                        Shop Layout
+                                                    </p>
+                                                    <ul class="shop-layout-list list-unstyled px-4">
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Filter area</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">AJAX Shop</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#" class="new-badge">Hidden sidebar</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">No page heading</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Filter area</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">AJAX Shop</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Hidden sidebar</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">No page heading</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Filter area</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">AJAX Shop</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Hidden sidebar</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">No page heading</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6 px-2 custom-layout">
+                                                    <p class="text-uppercase px-4 pt-2 shop-layout-text-style">
+                                                        Custom layout
+                                                    </p>
+                                                    <ul class="shop-layout-list list-unstyled px-4">
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #1</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #2</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #3</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #4</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #5</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #5</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #6</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #7</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #8</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #9</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #10</a>
+                                                        </li>
+                                                        <li class="shop-layout-list-item">
+                                                            <a href="#">Custom Shop Page #12</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shop-page-img-section px-2">
+                                            <div class="shop-img-box">
+                                                <img src="./imgs/shop-page-1.png" alt="" />
+                                            </div>
+                                            <div class="shop-img-name text-center">
+                                                <h5>Advanced Variable products with swatches</h5>
+                                            </div>
+                                            <div class="shop-img-content text-center px-2 py-2">
+                                                <span>Products variations colors and images without any
+                                                    additional plugins.</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center pt-1">
+                                                <div
+                                                    class="view-more-btn text-center btn btn-success rounded-5 px-4 py-2">
+                                                    View More
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-page-dd py-2">
+                                        <div class="row">
+                                            <div class="col-6 shop-layout pb-2">
+                                                <p class="text-uppercase px-4 pt-2 shop-layout-text-style">
+                                                    Hover Design
+                                                </p>
+                                                <ul class="shop-layout-list list-unstyled px-4">
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Filter area</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">AJAX Shop</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#" class="new-badge">Hidden sidebar</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">No page heading</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Filter area</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">AJAX Shop</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Hidden sidebar</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">No page heading</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Filter area</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">AJAX Shop</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Hidden sidebar</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">No page heading</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 px-2 custom-layout">
+                                                <p class="text-uppercase px-4 pt-2 shop-layout-text-style">
+                                                    Product Styyles
+                                                </p>
+                                                <ul class="shop-layout-list list-unstyled px-4">
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #1</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #2</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #3</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #4</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #5</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #5</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #6</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #7</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #8</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #9</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #10</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #12</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 px-2 custom-layout">
+                                                <p class="text-uppercase px-4 pt-2 shop-layout-text-style">
+                                                    Product Styyles
+                                                </p>
+                                                <ul class="shop-layout-list list-unstyled px-4">
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #1</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #2</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #3</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #4</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #5</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #5</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #6</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #7</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #8</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #9</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #10</a>
+                                                    </li>
+                                                    <li class="shop-layout-list-item">
+                                                        <a href="#">Custom Shop Page #12</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="navbar-items ms-4">
+                        <div class="dropdown">
+                            <a href="#" class="border-0" type="button" id="dropdownMenuButton"
+                                data-mdb-toggle="dropdown" aria-expanded="false">Blog<i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-blog">
+                                <div class="d-flex mt-3">
+                                    <div class="d-flex bg-light pe-4 ps-2 pb-3">
+                                        <div class="blog-dd-1 px-4 py-1">
+                                            <p class="text-uppercase pt-3 fw-bold">Blog types</p>
+                                            <ul class="list-unstyled text-secondary text-capitalize">
+                                                <li><a href="#">Alternative</a></li>
+                                                <li><a href="#">Small images</a></li>
+                                                <li><a href="#">Blog chess</a></li>
+                                                <li><a href="#">Grid</a></li>
+                                                <li><a href="#">Alternative</a></li>
+                                                <li><a href="#" class="position-relative">Small images<span
+                                                            class="position-absolute translate-middle badge bg-danger">New</span></a>
+                                                </li>
+                                                <li><a href="#">Blog chess</a></li>
+                                                <li><a href="#">Grid</a></li>
+                                                <li><a href="#">Small images</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="blog-dd-1 px-3 py-1">
+                                            <p class="text-uppercase position-relative pt-3 fw-bold">Single Posts<span
+                                                    class="position-absolute translate-middle badge bg-success">Examples</span>
+                                            </p>
+
+                                            <ul class="list-unstyled text-secondary text-capitalize">
+                                                <li><a href="#">Alternative</a></li>
+                                                <li><a href="#">Small images</a></li>
+                                                <li><a href="#">Blog chess</a></li>
+                                                <li><a href="#">Grid</a></li>
+                                                <li><a href="#">Alternative</a></li>
+                                                <li><a href="#">Small images</a></li>
+                                                <li><a href="#">Blog chess</a></li>
+                                                <li><a href="#">Grid</a></li>
+                                                <li><a href="#">Small images</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dd-2 pt-1 px-3">
+                                        <p class="text-uppercase pt-3 fw-bold">Recent Posts</p>
+
+                                        <div class="row blog-img-box mt-3 pb-3">
+                                            <div class="col-3">
+                                                <img src="./imgs/blog-11-75x65.jpg" alt="" />
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="blog-img-name">
+                                                    <a href="#">A companion for extra sleeping</a>
+                                                </div>
+                                                <div class="blog-img-content ps-3">
+                                                    <span>July 23, 2016</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row blog-img-box mt-3 pb-3">
+                                            <div class="col-3">
+                                                <img src="./imgs/blog-12-75x65.jpg" alt="" />
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="blog-img-name">
+                                                    <a href="#">A companion for extra sleeping</a>
+                                                </div>
+                                                <div class="blog-img-content ps-3">
+                                                    <span>July 23, 2016</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row blog-img-box img-border-0 mt-3 pb-3">
+                                            <div class="col-3">
+                                                <img src="./imgs/blog-17-75x65.jpg" alt="" />
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="blog-img-name">
+                                                    <a href="#">A companion for extra sleeping</a>
+                                                </div>
+                                                <div class="blog-img-content ps-3">
+                                                    <span>July 23, 2016</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="navbar-items ms-4">
+                        <div class="dropdown">
+                            <a href="#" class="border-0" type="button" id="dropdownMenuButton"
+                                data-mdb-toggle="dropdown" aria-expanded="false">Pages<i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-pages">
+                                <div class="d-flex pages-dd mt-3 py-2">
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">DEmo layout</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Categories</a></li>
+                                            <li><a href="#">Basic</a></li>
+                                            <li><a href="#">Paralax</a></li>
+                                            <li><a href="#">Infinite scrolling</a></li>
+                                            <li><a href="#">Boxed</a></li>
+                                            <li><a href="#">Categories</a></li>
+                                            <li><a href="#">Basic</a></li>
+                                            <li><a href="#">Paralax</a></li>
+                                            <li><a href="#">Infinite scrolling</a></li>
+                                            <li><a href="#">Boxed</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">Pre-Built pages</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Contact us #1</a></li>
+                                            <li><a href="#">Contact us #2</a></li>
+                                            <li><a href="#">Contact us #3</a></li>
+                                            <li><a href="#">Contact us #4</a></li>
+                                            <li><a href="#">Contact us #5</a></li>
+                                            <li><a href="#">FAQ #1</a></li>
+                                            <li><a href="#">FAQ #2</a></li>
+                                            <li><a href="#">About us #1</a></li>
+                                            <li><a href="#">About us #2</a></li>
+                                            <li><a href="#">About Me</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">Portfolio</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Standart</a></li>
+                                            <li><a href="#">Alternative</a></li>
+                                            <li><a href="#">Text under image</a></li>
+                                            <li><a href="#">Hover Parallax</a></li>
+                                            <li><a href="#">Portfolio full width</a></li>
+                                            <li><a href="#">Standart</a></li>
+                                            <li><a href="#">Alternative</a></li>
+                                            <li><a href="#">Text under image</a></li>
+                                            <li><a href="#">Hover Parallax</a></li>
+                                            <li><a href="#">Portfolio full width</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">Headers</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Advanced</a></li>
+                                            <li><a href="#">E-commerce</a></li>
+                                            <li><a href="#">Header Base</a></li>
+                                            <li><a href="#">Advanced</a></li>
+                                            <li><a href="#">Advanced Menu</a></li>
+                                            <li><a href="#">Double Menu</a></li>
+                                            <li><a href="#">Header base</a></li>
+                                            <li><a href="#">E-commerce</a></li>
+                                            <li><a href="#">Advanced</a></li>
+                                            <li><a href="#">E-commerce</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+
+
+                    <li class="navbar-items ms-4">
+                        <div class="dropdown">
+                            <a href="#" class="border-0" type="button" id="dropdownMenuButton"
+                                data-mdb-toggle="dropdown" aria-expanded="false">Elements<i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-elements">
+                                <div class="d-flex pages-dd mt-3 py-2">
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">Theme elements</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Categories</a></li>
+                                            <li><a href="#">Basic</a></li>
+                                            <li><a href="#">Paralax</a></li>
+                                            <li><a href="#">Infinite scrolling</a></li>
+                                            <li><a href="#">Boxed</a></li>
+                                            <li><a href="#">Categories</a></li>
+                                            <li><a href="#">Basic</a></li>
+                                            <li><a href="#">Paralax</a></li>
+                                            <li><a href="#">Infinite scrolling</a></li>
+                                            <li><a href="#">Boxed</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">Theme elements</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Contact us #1</a></li>
+                                            <li><a href="#">Contact us #2</a></li>
+                                            <li><a href="#">Contact us #3</a></li>
+                                            <li><a href="#">Contact us #4</a></li>
+                                            <li><a href="#">Contact us #5</a></li>
+                                            <li><a href="#">FAQ #1</a></li>
+                                            <li><a href="#">FAQ #2</a></li>
+                                            <li><a href="#">About us #1</a></li>
+                                            <li><a href="#">About us #2</a></li>
+                                            <li><a href="#">About Me</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">Theme elements</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Standart</a></li>
+                                            <li><a href="#">Alternative</a></li>
+                                            <li><a href="#">Text under image</a></li>
+                                            <li><a href="#">Hover Parallax</a></li>
+                                            <li><a href="#">Portfolio full width</a></li>
+                                            <li><a href="#">Standart</a></li>
+                                            <li><a href="#">Alternative</a></li>
+                                            <li><a href="#">Text under image</a></li>
+                                            <li><a href="#">Hover Parallax</a></li>
+                                            <li><a href="#">Portfolio full width</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pages-section-box px-4 pb-2">
+                                        <div class="pages-section-name">
+                                            <p class="text-uppercase pt-3 fw-bold">Woocommerce</p>
+                                        </div>
+                                        <ul class="list-unstyled text-secondary text-capitalize">
+                                            <li><a href="#">Advanced</a></li>
+                                            <li><a href="#">E-commerce</a></li>
+                                            <li><a href="#">Header Base</a></li>
+                                            <li><a href="#">Advanced</a></li>
+                                            <li><a href="#">Advanced Menu</a></li>
+                                            <li><a href="#">Double Menu</a></li>
+                                            <li><a href="#">Header base</a></li>
+                                            <li><a href="#">E-commerce</a></li>
+                                            <li><a href="#">Advanced</a></li>
+                                            <li><a href="#">E-commerce</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+                <!-- <ul class="navbar-right-list list-unstyled d-flex ">
+              <li><a href="#" class="special pe-3">Special offer</a></li>
+              <li>
+                <a href="#">Perchase theme</a>
+              </li>
+              <li class="socials-components">
+                <ul class="socials list-unstyled d-flex mt-0">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </li>
+            </ul> -->
+
+
+                <ul class="navbar-right-items list-unstyled d-flex mt-3">
+                    <div class="col-3 me-4">
+                        <li class="special">
+                            <a href="#" class="special d-flex">Special offer</a>
+                        </li>
+                    </div>
+                    <div class="col-4">
+                        <li class="theme">
+                            <a href="#">Perchase theme</a>
+                        </li>
+                    </div>
+
+                    <li class="socials-components">
+                        <ul class="socials list-unstyled d-flex mt-0">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-telegram-plane"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+        </div>
+
+        <div class="main-section row m-auto pt-3 left-bar">
+            <div class="col-3 dropdown-browse category-section">
+                <div class="browse-active py-3">
+                    <i class="fa-solid fa-bars ms-3 me-2"></i>
+                    <span>Browse Categories</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="category-list list-unstyled m-0">
+                    <li class="dropdown category-item">
+                        <a href="#" class="text-decoration-none ms-2">
+                            <img class="icon-img " src="./imgs/img-1.svg" alt="">
+                            <span class="d-lg-inline-block w-75 ">Furniture</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <div class="dropdown-f">
+                            <div class="f-items row pt-2 pb-4">
+                                <div class="f-item col-4 mt-3  ">
+                                    <div class="img-box ps-2 py-1"><img src="./imgs/menu-product-1-118x118.jpg" alt="">
+                                    </div>
+                                    <div class="f-item-elements mt-1 ps-1">
+                                        <div class="f-item-elem-name pt-1">
+                                            <a href="#" class="text-uppercase">Clocks</a>
+                                        </div>
+                                        <ul class="list-unstyled clock-list ">
+                                            <li><a href="#">Mantel Clocks</a></li>
+                                            <li><a href="#">Anniversary Clocks</a></li>
+                                            <li><a href="#">Wall Clocks</a></li>
+                                            <li><a href="#">Digital Clocks</a></li>
+                                            <li><a href="#">Travel and Alarm </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="f-item col-4 mt-3 ">
+                                    <div class="img-box ps-2 py-1"><img src="./imgs/menu-product-2-118x118.jpg" alt="">
+                                    </div>
+                                    <div class="f-item-elements mt-1 ps-1">
+                                        <div class="f-item-elem-name pt-1">
+                                            <a href="#" class="text-uppercase">Table top</a>
+                                        </div>
+                                        <ul class="list-unstyled clock-list ">
+                                            <li><a href="#">Mantel Clocks</a></li>
+                                            <li><a href="#">Anniversary Clocks</a></li>
+                                            <li><a href="#">Wall Clocks</a></li>
+                                            <li><a href="#">Digital Clocks</a></li>
+                                            <li><a href="#">Travel and Alarm </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="f-item col-4 mt-3 ">
+                                    <div class="img-box ps-2 py-1"><img src="./imgs/menu-product-4-1-118x118.jpg"
+                                            alt=""></div>
+                                    <div class="f-item-elements mt-1 ps-1">
+                                        <div class="f-item-elem-name pt-1">
+                                            <a href="#" class="text-uppercase">kitchen</a>
+                                        </div>
+                                        <ul class="list-unstyled clock-list ">
+                                            <li><a href="#">Mantel Clocks</a></li>
+                                            <li><a href="#">Anniversary Clocks</a></li>
+                                            <li><a href="#">Wall Clocks</a></li>
+                                            <li><a href="#">Digital Clocks</a></li>
+                                            <li><a href="#">Travel and Alarm </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="f-item col-4 mt-3 ">
+                                    <div class="img-box ps-2 py-1"><img src="./imgs/menu-product-3-1-118x118.jpg"
+                                            alt=""></div>
+                                    <div class="f-item-elements mt-1 ps-1">
+                                        <div class="f-item-elem-name pt-1">
+                                            <a href="#" class="text-uppercase">lighting</a>
+                                        </div>
+                                        <ul class="list-unstyled clock-list ">
+                                            <li><a href="#">Mantel Clocks</a></li>
+                                            <li><a href="#">Anniversary Clocks</a></li>
+                                            <li><a href="#">Wall Clocks</a></li>
+                                            <li><a href="#">Digital Clocks</a></li>
+                                            <li><a href="#">Travel and Alarm </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row d-flex secondRow py-1">
+
+                                <div class="col-3 img-bright"><a href="#"><img src="./imgs/brand-1.png" alt=""></a>
+                                </div>
+                                <div class="col-3 img-bright bright-1"><a href="#"><img src="./imgs/brand-2.png"
+                                            alt=""></a></div>
+                                <div class="col-3 img-bright bright-2"><a href="#"><img src="./imgs/brand-3.png"
+                                            alt=""></a></div>
+                                <div class="col-3 img-bright bright-1"><a href="#"><img src="./imgs/brand-4.png"
+                                            alt=""></a></div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <li class="category-item dropdown">
+                        <a href="#">
+                            <img src="./imgs/img-2.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Cooking</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <div class="dropdown-cook container">
+                            <div class="cooking-section row flex-wrap ">
+
+                                <div class="cooking-section-item ps-4">
+                                    <div class="cooking-section-name py-2">
+                                        <a href="#" class="text-uppercase">sofas and
+                                            armchairs</a>
+                                    </div>
+                                    <div class="cooking-section-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Easy chairs</a></li>
+                                            <li><a href="#">Small Sofas</a></li>
+                                            <li><a href="#">Day Bed</a></li>
+                                            <li><a href="#">Footstools </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cooking-section-item ps-4">
+                                    <div class="cooking-section-name py-2">
+                                        <a href="#" class="text-uppercase">Table and chairs</a>
+                                    </div>
+                                    <div class="cooking-section-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Console Tables</a></li>
+                                            <li><a href="#">Secretary Desks</a></li>
+                                            <li><a href="#">Game Tables</a></li>
+                                            <li><a href="#">Cofee Tables </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cooking-section-item ps-4">
+                                    <div class="cooking-section-name py-2">
+                                        <a href="#" class="text-uppercase">KID furniture</a>
+                                    </div>
+                                    <div class="cooking-section-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Kids Lighting</a></li>
+                                            <li><a href="#">Kids Desks</a></li>
+                                            <li><a href="#">Kids Tables</a></li>
+                                            <li><a href="#">Kids Tables </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cooking-section-item ps-4">
+                                    <div class="cooking-section-name py-2">
+                                        <a href="#" class="text-uppercase">Dining</a>
+                                    </div>
+                                    <div class="cooking-section-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Dining Tables</a></li>
+                                            <li><a href="#">Dining Desks</a></li>
+                                            <li><a href="#">Dining Tables</a></li>
+                                            <li><a href="#">Dining Tables </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cooking-section-item ps-4">
+                                    <div class="cooking-section-name py-1">
+                                        <a href="#" class="text-uppercase">Storage systems</a>
+                                    </div>
+                                    <div class="cooking-section-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Shoe Cabinets</a></li>
+                                            <li><a href="#">Trolleys</a></li>
+                                            <li><a href="#">Hallways Units</a></li>
+                                            <li><a href="#">Screens </a></li>
+                                            <li><a href="#">Screens Chests</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cooking-section-item ps-4">
+                                    <div class="cooking-section-name py-1">
+                                        <a href="#" class="text-uppercase">Chests of drawers</a>
+                                    </div>
+                                    <div class="cooking-section-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Hallways Units</a></li>
+                                            <li><a href="#">Display Cabinets</a></li>
+                                            <li><a href="#">Storage Walls</a></li>
+                                            <li><a href="#">Sideboards </a></li>
+                                            <li><a href="#">Bookcases </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="category-item dropdown">
+                        <a href="#">
+                            <img src="./imgs/img-3.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Accessories</span> <i
+                                class="fa-solid fa-chevron-right"></i></a>
+
+                        <div class="dropdown-acc container">
+                            <div class="acc-section row">
+                                <div class="acc-section-items col-8 d-flex flex-wrap bg-light pt-3">
+
+                                    <div class="acc-section-item col-6 pt-2 pb-3 ps-3">
+                                        <div class="acc-name mb-2 mt-1"><a href="#">Furniture</a></div>
+                                        <div class="acc-sec-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">small sofas</a></li>
+                                                <li><a href="#" class="text-capitalize">armchairs</a></li>
+                                                <li><a href="#" class="text-capitalize">easy chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">lounge chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">day beds</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="acc-section-item col-6 pt-2 pb-3 ps-3">
+                                        <div class="acc-name mb-2 mt-1"><a href="#">bathromm</a></div>
+                                        <div class="acc-sec-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">small sofas</a></li>
+                                                <li><a href="#" class="text-capitalize">armchairs</a></li>
+                                                <li><a href="#" class="text-capitalize">easy chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">lounge chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">day beds</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="acc-section-item col-6 pt-2 pb-3 ps-3">
+                                        <div class="acc-name mb-2 mt-1"><a href="#">kitchen</a></div>
+                                        <div class="acc-sec-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">small sofas</a></li>
+                                                <li><a href="#" class="text-capitalize">armchairs</a></li>
+                                                <li><a href="#" class="text-capitalize">easy chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">lounge chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">day beds</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="acc-section-item col-6 pt-2 pb-3 ps-3">
+                                        <div class="acc-name mb-2 mt-1"><a href="#">outdoor</a></div>
+                                        <div class="acc-sec-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">small sofas</a></li>
+                                                <li><a href="#" class="text-capitalize">armchairs</a></li>
+                                                <li><a href="#" class="text-capitalize">easy chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">lounge chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">day beds</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="acc-summer py-2 col-4 ">
+                                    <div class="acc-name mb-2 mt-1"><a href="#">summer style</a></div>
+                                    <ul class="list-unstyled row mt-1">
+                                        <li>
+                                            <div class="d-flex acc-content py-2">
+                                                <div class="col-4"><a href="#"><img
+                                                            src="./imgs/product-accessories-10-88x100.jpg" alt=""></a>
+                                                </div>
+                                                <div class="col-8 ps-4 mt-1"><a href="#">
+                                                        Decoration wooden present </a>
+                                                    <p class="acc-price mt-2">$89.00</p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="d-flex acc-content py-2">
+                                                <div class="col-4"><a href="#"><img src="./imgs/acc-2-88x100.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="col-8 ps-4 mt-1"><a href="#">
+                                                        Decoration wooden present </a>
+                                                    <div class="acc-rate d-felx">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p class="acc-price mt-2">$89.00</p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="d-flex acc-content py-2">
+                                                <div class="col-4"><a href="#"><img src="./imgs/accessories3-88x100.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="col-8 ps-4 mt-1"><a href="#">
+                                                        Key Wood Accesories </a>
+                                                    <p class="acc-price mt-2 pt-3">$149.00</p>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="d-flex acc-content py-2 border-bottom-0">
+                                                <div class="col-4"><a href="#"><img src="./imgs/acc-4-88x100.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="col-8 ps-4 mt-1"><a href="#">
+                                                        Decoration wooden present </a>
+                                                    <div class="acc-rate d-felx">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="acc-prices-deleted d-flex mt-2">
+                                                        <p
+                                                            class="text-muted text-decoration-line-through text-secondary pe-2">
+                                                            $150.00</p>
+                                                        <p class="acc-price ">$5.00</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="category-item dropdown">
+                        <a href="#">
+                            <img src="./imgs/img-4.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Fashion</span>
+                            <i class="fa-solid fa-chevron-right"></i></a>
+                        <div class="dropdown-fashion">
+                            <div class="fashion-left-row row">
+
+                                <div class="fashion-left col-8 d-flex flex-wrap">
+
+                                    <div class="fashion-item py-3 col-6 d-flex">
+                                        <div class="col-6"><i class="fa-solid fa-vest-patches"></i></div>
+                                        <div class="col-6 fash-item-link pt-1">
+                                            <div class="fashion-item-name pb-2"><a href="#"
+                                                    class="text-uppercase">Man</a></div>
+                                            <ul class="list-unstyled fashion-list">
+                                                <li><a href="#">Outwears</a></li>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Jumpsuits</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="fashion-item py-3 col-6 d-flex">
+                                        <div class="col-6"><i class="fa-solid fa-shirt"></i></div>
+                                        <div class="col-6 fash-item-link pt-1">
+                                            <div class="fashion-item-name pb-2"><a href="#" class="text-uppercase">
+                                                    Woman</a></div>
+                                            <ul class="list-unstyled fashion-list">
+                                                <li><a href="#">Knitwears</a></li>
+                                                <li><a href="#">Skirts</a></li>
+                                                <li><a href="#">Sweatshirts</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="fashion-item py-3 col-6 d-flex">
+                                        <div class="col-6"><i class="fa-solid fa-child"></i></div>
+                                        <div class="col-6 fash-item-link pt-1">
+                                            <div class="fashion-item-name pb-2"><a href="#"
+                                                    class="text-uppercase">Kids</a></div>
+                                            <ul class="list-unstyled fashion-list">
+                                                <li><a href="#">T-Shirts</a></li>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Shorts</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="fashion-item py-3 col-6 d-flex">
+                                        <div class="col-6"><i class="fa-brands fa-redhat"></i></div>
+                                        <div class="col-6 fash-item-link pt-1">
+                                            <div class="fashion-item-name pb-2"><a href="#"
+                                                    class="text-uppercase">Accesories</a></div>
+                                            <ul class="list-unstyled fashion-list">
+                                                <li><a href="#">Scarfs</a></li>
+                                                <li><a href="#">Hats</a></li>
+                                                <li><a href="#">Sunglases</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="fashion-item py-3 col-6 d-flex">
+                                        <div class="col-6"><i class="fa-solid fa-briefcase"></i></div>
+                                        <div class="col-6 fash-item-link pt-1">
+                                            <div class="fashion-item-name pb-2"><a href="#"
+                                                    class="text-uppercase">Bags</a></div>
+                                            <ul class="list-unstyled fashion-list">
+                                                <li><a href="#">Bagpacks</a></li>
+                                                <li><a href="#">Travel</a></li>
+                                                <li><a href="#">Business</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="fashion-item py-3 col-6 d-flex">
+                                        <div class="col-6"><i class="fa-solid fa-shoe-prints"></i></div>
+                                        <div class="col-6 fash-item-link pt-1">
+                                            <div class="fashion-item-name pb-2"><a href="#"
+                                                    class="text-uppercase">Shoes</a></div>
+                                            <ul class="list-unstyled fashion-list">
+                                                <li><a href="#">Leathers</a></li>
+                                                <li><a href="#">Sneakers</a></li>
+                                                <li><a href="#">Moccasins</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-4 fashion-img">
+                                    <img src="./imgs/fashion-1.png" alt="">
+                                    <div class="fashion-img-text">
+                                        <h2 class="text-uppercase">man's casual collection</h2>
+                                    </div>
+                                    <div class="fashion-img-hover">
+                                        <div class="btn btn-dark rounded-0 text-uppercase">shop now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="category-item dropdown">
+                        <a href="#">
+                            <img src="./imgs/img-5.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Clock</span>
+                            <i class="fa-solid fa-chevron-right"></i></a>
+                        <div class="dropdown-clock">
+                            <div class="row dd-clock-section pt-4">
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">Indoor</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Barware</a></li>
+                                            <li><a href="#">Tableware</a></li>
+                                            <li><a href="#">Placemats</a></li>
+                                            <li><a href="#">Serving</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">outdoor</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Garden Tools</a></li>
+                                            <li><a href="#">Pot Plants</a></li>
+                                            <li><a href="#">Bird Feeders</a></li>
+                                            <li><a href="#">Outdoor Toys</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">Kitchen</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Cookbooks</a></li>
+                                            <li><a href="#">Baking</a></li>
+                                            <li><a href="#">Carafes & Jugs</a></li>
+                                            <li><a href="#">Mugs & Cups</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">Drink</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Barware</a></li>
+                                            <li><a href="#">Hip Flasks</a></li>
+                                            <li><a href="#">Wine Accesories</a></li>
+                                            <li><a href="#">Tea & Coffee</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">toy</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Kid Meal Time</a></li>
+                                            <li><a href="#">Board Games & Puzzles</a></li>
+                                            <li><a href="#">Creative Toys</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">travel</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Luggage Accessories</a></li>
+                                            <li><a href="#">Tech Accessories</a></li>
+                                            <li><a href="#">Reusable Bags</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">fashion</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Headphones</a></li>
+                                            <li><a href="#">Reusable Bags</a></li>
+                                            <li><a href="#">Grooming</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">health</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Glass Food Container</a></li>
+                                            <li><a href="#">Sports Drink Bottles</a></li>
+                                            <li><a href="#">Stainless Steel Bottles</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 clock-brands d-flex py-4">
+                                    <div class="col-3"><a href="#"> <img src="./imgs/brand-1.png" alt=""></a></div>
+                                    <div class="col-3"><a href="#"> <img src="./imgs/brand-2.png" alt=""></a></div>
+                                    <div class="col-3"><a href="#"> <img src="./imgs/brand-3.png" alt=""></a></div>
+                                    <div class="col-3"><a href="#"> <img src="./imgs/brand-4.png" alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="category-item dropdown">
+                        <a href="#">
+                            <img src="./imgs/img-6.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Lighting</span>
+                            <i class="fa-solid fa-chevron-right"></i></a>
+                        <div class="dropdown-light ">
+                            <div class="row dd-clock-section pt-4">
+                                <div class="col-4 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">Sofas and armchairs</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Footstools</a></li>
+                                            <li><a href="#">Day Beds</a></li>
+                                            <li><a href="#">Lounge Chairs</a></li>
+                                            <li><a href="#">Small Sofas</a></li>
+                                            <li><a href="#">Easy Chairs</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-4 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">tables and chairs</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Coffee Tables</a></li>
+                                            <li><a href="#">Console Tables</a></li>
+                                            <li><a href="#">Secretary Desks</a></li>
+                                            <li><a href="#">Writing Desks</a></li>
+                                            <li><a href="#">Game Tables</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-4 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">storage systems</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Storage Chests</a></li>
+                                            <li><a href="#">Hallway Units</a></li>
+                                            <li><a href="#">Shoe Cabinets</a></li>
+                                            <li><a href="#">Screens</a></li>
+                                            <li><a href="#">Trolleys</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-4 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">Chests of drawers</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Boookcases</a></li>
+                                            <li><a href="#">Storage Walls</a></li>
+                                            <li><a href="#">Sideboards</a></li>
+                                            <li><a href="#">Display Cabinets</a></li>
+                                            <li><a href="#">Hallway Units</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-4 clock-item">
+                                    <div class="clock-item-name">
+                                        <a href="###" class="text-uppercase">Kid furniture</a>
+                                    </div>
+                                    <div class="clock-list">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Kids Bedroom</a></li>
+                                            <li><a href="#">Kids Armchairs</a></li>
+                                            <li><a href="#">Kids Bathroom</a></li>
+                                            <li><a href="#">Kids Lighting</a></li>
+                                            <li><a href="#">Kids Textiles</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="category-item dropdown">
+                        <a href="#">
+                            <img src="./imgs/img-7.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Toys</span>
+                            <i class="fa-solid fa-chevron-right"></i></a>
+                        <div class="dropdown-toy">
+                            <div class="row dd-toys pt-4">
+                                <div class="col-9 d-flex flex-wrap">
+                                    <div class="col-4 clock-item">
+                                        <div class="clock-item-name">
+                                            <a href="#" class="text-uppercase">accessories</a>
+                                        </div>
+                                        <div class="clock-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">cushions</a></li>
+                                                <li><a href="#" class="text-capitalize">photo frames</a></li>
+                                                <li><a href="#" class="text-capitalize">bean bags</a></li>
+                                                <li><a href="#" class="text-capitalize">home telephones</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 clock-item">
+                                        <div class="clock-item-name">
+                                            <a href="#" class="text-uppercase">furniture</a>
+                                        </div>
+                                        <div class="clock-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">chairs</a></li>
+                                                <li><a href="#" class="text-capitalize">loungers </a></li>
+                                                <li><a href="#" class="text-capitalize">stools </a></li>
+                                                <li><a href="#" class="text-capitalize">shelves</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 clock-item">
+                                        <div class="clock-item-name">
+                                            <a href="#" class="text-uppercase">lighting</a>
+                                        </div>
+                                        <div class="clock-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">ceiling lighting</a></li>
+                                                <li><a href="#" class="text-capitalize">wall lights </a></li>
+                                                <li><a href="#" class="text-capitalize">floor lamps </a></li>
+                                                <li><a href="#" class="text-capitalize">light bulbs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 clock-item">
+                                        <div class="clock-item-name">
+                                            <a href="#" class="text-uppercase">bedroom</a>
+                                        </div>
+                                        <div class="clock-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">bed cushions</a></li>
+                                                <li><a href="#" class="text-capitalize">duvets & pillows </a></li>
+                                                <li><a href="#" class="text-capitalize">throws & blankets </a></li>
+                                                <li><a href="#" class="text-capitalize">alarm clocks</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 clock-item">
+                                        <div class="clock-item-name">
+                                            <a href="#" class="text-uppercase">bathroom</a>
+                                        </div>
+                                        <div class="clock-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">shower curtains</a></li>
+                                                <li><a href="#" class="text-capitalize">bathroom bins </a></li>
+                                                <li><a href="#" class="text-capitalize">bath towels</a></li>
+                                                <li><a href="#" class="text-capitalize">bath mats</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 clock-item">
+                                        <div class="clock-item-name">
+                                            <a href="#" class="text-uppercase">kitchen</a>
+                                        </div>
+                                        <div class="clock-list">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="text-capitalize">pots & pans</a></li>
+                                                <li><a href="#" class="text-capitalize">cooking & baking </a></li>
+                                                <li><a href="#" class="text-capitalize">kitchen linen</a></li>
+                                                <li><a href="#" class="text-capitalize">kitchen storage</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 toy-product mt-1">
+                                    <div class="toy-img-box position-relative">
+                                        <img src="./imgs/clocks6-430x490.jpg" alt="">
+                                        <div
+                                            class="toy-product-sale position-absolute top-0 start-0 bg-success rounded-circle py-2 px-1 text-light ms-2 mt-2">
+                                            -17%</div>
+                                    </div>
+
+                                    <div class="add-to-cart">add to cart</div>
+                                    <!-- <div class="cart-changes-to-basket"><i class="fa-solid fa-basket-shopping"></i></div> -->
+                                    <div class="hover-icons">
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <a href="#"><i class="fa-regular fa-heart"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="toy-product-info mt-2 ms-2">
+                                        <div class="toy-pr-spesific-name text-center"><a href="#">Ullamcorper arcu
+                                                elementum</a></div>
+                                        <div class="toy-pr-name text-center ps-2"><a href="#">Clocks</a></div>
+                                        <div class="acc-rate d-flex justify-content-center mt-3 ms-2 pb-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star rate-0"></i>
+                                        </div>
+                                        <div class="pro-prices d-flex justify-content-center mt-3 ms-2">
+                                            <p class="text-secondary text-decoration-line-through me-1">$399.00</p>
+                                            <p class="text-success">$333.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex px-2 py-3 alt-bg">
+                                    <div class="col-3 border-right ps-3">
+                                        <div class="clock-item-name mt-1">
+                                            <p class="text-uppercase ">ups service</p>
+                                        </div>
+                                        <p class="text-secondary ">Shippings & returns</p>
+                                    </div>
+                                    <div class="col-3 border-right ps-3">
+                                        <div class="clock-item-name mt-1">
+                                            <p class="text-uppercase ">ups service</p>
+                                        </div>
+                                        <p class="text-secondary ">Shippings & returns</p>
+                                    </div>
+                                    <div class="col-3 border-right ps-3">
+                                        <div class="clock-item-name mt-1">
+                                            <p class="text-uppercase ">ups service</p>
+                                        </div>
+                                        <p class="text-secondary ">Shippings & returns</p>
+                                    </div>
+                                    <div class="col-3 border-right ps-3 border-0">
+                                        <div class="clock-item-name mt-1">
+                                            <p class="text-uppercase ">ups service</p>
+                                        </div>
+                                        <p class="text-secondary ">Shippings & returns</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="category-item">
+                        <a href="#">
+                            <img src="./imgs/img-8.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Handmade</span> </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#">
+                            <img src="./imgs/img-9.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Minimalism</span> </a>
+
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#">
+                            <img src="./imgs/img-10.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Electironic</span> </a>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#">
+                            <img src="./imgs/img-11.svg" class="ms-3 icon-img" alt="">
+                            <span class="d-lg-inline-block w-75 ">Cars</span> </a>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-7 search-area-section">
+                <div class="search-area d-flex">
+                    <input type="text" placeholder="Search for products" class="py-2 ps-3 pe-5 mt-1 input-search" />
+
+                    <label class="dropdown-button">
+                        <div class="dd-button mt-1"><span>Select category</span></div>
+
+                        <input type="checkbox" class="dd-input" id="test" />
+
+                        <ul class="dd-menu">
+                            <li><a href="#">Clocks</a></li>
+                            <li><a href="#">Lights</a></li>
+                            <li><a href="#">Furniture</a></li>
+                            <li><a href="#">Accesories</a></li>
+                            <li><a href="#">Cooking</a></li>
+                            <li><a href="#">Toys</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </label>
+
+                    <div class="search-btn py-2 mt-1 px-3 text-center">
+                        <i class="fa-solid fa-search text-light fs-5"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-2 ms-4">
+                <div class="call-shop d-flex">
+                    <div class="call-section d-flex pe-3">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div class="support">
+                            <span>24/7 Support</span>
+                            <p class="mt-2">+73 099 321 312</p>
+                        </div>
+                    </div>
+                    <div class="shop-section">
+                        <i class="fa-brands fa-shopify"></i>
+                    </div>
+                    <div class="support ps-1">
+                        <span>$0.00</span>
+                        <p class="mt-2">0 item</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-12 faq-title mx-1">
+                    <div class="faq-title-box my-5">
+                        <h1 class="text-light text-center">FAQs</h1>
+                        <p class="text-light text-center">HOME / FAQS</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-section ">
+            <div class="row mt-5 width-92 mx-0 mx-auto mt-4">
+                <div class="col-6 left">
+                    <p class="fw-bold pb-4 fs-5">SHOPPING INFORMATION</p>
+    
+                    <ul class="list-unstyled questions-list ">
+                        <li class="question">
+                            <a href="#">
+                                Will I receive the same product that I see in the picture?
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                Where can I view my sales receipt?
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                How can I return an item? </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                Will you restock items indicated as “out of stock?” </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                Where can I ship my order? </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+                <div class="col-6 left border-right-0">
+
+                    <p class="fw-bold pb-4 fs-5">PAYMENT INFORMATION</p>
+    
+                    <ul class="list-unstyled questions-list ">
+                        <li class="question">
+                            <a href="#">
+                                Will I receive the same product that I see in the picture?
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                Where can I view my sales receipt?
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                How can I return an item? </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                Will you restock items indicated as “out of stock?” </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="question">
+                            <a href="#">
+                                Where can I ship my order? </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+               
+            </div>
+        </div>
+
+
+        <div class="info-section py-5 px-5 my-3">
+            <div class="row">
+                <div class="col-2 d-flex">
+                    <div class="col-3 text-light me-4"><i class="fa-solid fa-truck-moving"></i></div>
+                    <div class="col-9 mt-2">
+                        <div class="info-item-name-box">
+                            <p class="text-uppercase text-light fw-bold">free shipping</p>
+                            <p class="mt-4">Carrier information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <div class="col-3 text-light me-4"><i class="fa-regular fa-credit-card"></i></div>
+                    <div class="col-9 mt-2">
+                        <div class="info-item-name-box">
+                            <p class="text-uppercase text-light fw-bold">free shipping</p>
+                            <p class="mt-4">Carrier information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <div class="col-3 text-light me-4"><i class="fa-solid fa-headset"></i></div>
+                    <div class="col-9 mt-2">
+                        <div class="info-item-name-box">
+                            <p class="text-uppercase text-light fw-bold">24/7 support</p>
+                            <p class="mt-4">Carrier information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <div class="col-3 text-light me-4"><i class="fa-solid fa-shield-heart"></i></div>
+                    <div class="col-9 mt-2">
+                        <div class="info-item-name-box">
+                            <p class="text-uppercase text-light fw-bold">100% safe</p>
+                            <p class="mt-4">Carrier information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex">
+                    <div class="col-3 text-light me-4"><i class="fa-solid fa-rotate-left"></i></div>
+                    <div class="col-9 mt-2">
+                        <div class="info-item-name-box">
+                            <p class="text-uppercase text-light fw-bold">free return</p>
+                            <p class="mt-4">Carrier information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section width-92 mx-0 mx-auto mt-5 pb-4">
+            <div class="row">
+                <div class="col-8 d-flex">
+                    <div class="col-3 footer-component">
+                        <div class="fc-name">
+                            <p class="text-uppercase fw-bold">our stores</p>
+                        </div>
+                        <div class="footer-element-list">
+                            <ul class="footer-list list-unstyled">
+                                <li><a href="#" class=" text-decoration-none">New York</a></li>
+                                <li><a href="#" class=" text-decoration-none">London</a></li>
+                                <li><a href="#" class=" text-decoration-none">Los Angeles</a></li>
+                                <li><a href="#" class=" text-decoration-none">Chicago</a></li>
+                                <li><a href="#" class=" text-decoration-none">Las Vegas</a></li>
+                                <li><a href="#" class=" text-decoration-none">Cockfosters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 footer-component">
+                        <div class="fc-name">
+                            <p class="text-uppercase fw-bold">our stores</p>
+                        </div>
+                        <div class="footer-element-list">
+                            <ul class="footer-list list-unstyled">
+                                <li><a href="#" class=" text-decoration-none">New York</a></li>
+                                <li><a href="#" class=" text-decoration-none">London</a></li>
+                                <li><a href="#" class=" text-decoration-none">Los Angeles</a></li>
+                                <li><a href="#" class=" text-decoration-none">Chicago</a></li>
+                                <li><a href="#" class=" text-decoration-none">Las Vegas</a></li>
+                                <li><a href="#" class=" text-decoration-none">Cockfosters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 footer-component">
+                        <div class="fc-name">
+                            <p class="text-uppercase fw-bold">our stores</p>
+                        </div>
+                        <div class="footer-element-list">
+                            <ul class="footer-list list-unstyled">
+                                <li><a href="#" class=" text-decoration-none">New York</a></li>
+                                <li><a href="#" class=" text-decoration-none">London</a></li>
+                                <li><a href="#" class=" text-decoration-none">Los Angeles</a></li>
+                                <li><a href="#" class=" text-decoration-none">Chicago</a></li>
+                                <li><a href="#" class=" text-decoration-none">Las Vegas</a></li>
+                                <li><a href="#" class=" text-decoration-none">Cockfosters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 footer-component">
+                        <div class="fc-name">
+                            <p class="text-uppercase fw-bold">our stores</p>
+                        </div>
+                        <div class="footer-element-list">
+                            <ul class="footer-list list-unstyled">
+                                <li><a href="#" class=" text-decoration-none">New York</a></li>
+                                <li><a href="#" class=" text-decoration-none">London</a></li>
+                                <li><a href="#" class=" text-decoration-none">Los Angeles</a></li>
+                                <li><a href="#" class=" text-decoration-none">Chicago</a></li>
+                                <li><a href="#" class=" text-decoration-none">Las Vegas</a></li>
+                                <li><a href="#" class=" text-decoration-none">Cockfosters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row fc-name">
+                        <p class="text-uppercase fw-bold">available on:</p>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <a href="#">
+                                <img src="./imgs/footer-1.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#">
+                                <img src="./imgs/footer-2.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mt-4 last-row">
+                        <div class="fc-name">
+                            <p class="text-uppercase fw-bold">join our newsletter:</p>
+                        </div>
+                        <div class="newsletter-content text-secondary">
+                            <span>Will be used in accordance with our Privacy Policy</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" placeholder="Your email address">
+                                <div class="btn btn-success text-uppercase">sign in</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="width-92 mx-0 mx-auto mt-4">
+            <div class="row ms-1 footer-1">
+                <div class="col-4">
+                    <div class="row f-name">
+                        <p class="text-capitalize fw-bold">payment system:</p>
+                    </div>
+                    <div class="row pay-img">
+                        <img src="./imgs/payment-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row f-name">
+                        <p class="text-capitalize fw-bold">shipping system:</p>
+                    </div>
+                    <div class="row pay-img">
+                        <img src="./imgs/shipping.png" alt="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row f-name">
+                        <p class="text-capitalize fw-bold">our social link:</p>
+                    </div>
+
+                    <div class="socials-components mt-2">
+                        <ul class="list-unstyled d-flex">
+                            <li class="social-item-info">
+                                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="social-item-info">
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="social-item-info">
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i></a>
+                            </li>
+                            <li class="social-item-info">
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="social-item-info">
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram-plane"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 mx-auto py-3">
+                <div class="col-12 text-center">
+                    <small>
+                        <a href="#" class="text-decoration-none text-dark">
+                            <strong>WOODMART</strong></a>
+                        <i class="fa fa-copyright" style="color: #7d7d7d;"></i>
+                        <span style="color: #7d7d7d;">
+                            2023 CREATED BY </span>
+                        <a href="#" class="text-decoration-none">
+                            <strong class="text-dark" style="color: #7d7d7d;">
+                                <span style="color: #CD3E3E;font-size: 12px">X</span>
+                                TEMOS STUDIO
+                            </strong>
+                        </a>
+                        <span style="color: #7d7d7d;">. PREMIUM E-COMMERCE SOLUTIONS.</span>
+
+                    </small>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

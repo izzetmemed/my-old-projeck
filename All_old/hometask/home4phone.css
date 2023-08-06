@@ -1,0 +1,23 @@
+@media (max-width: 500px){
+   
+    .aside2,.aside3,.aside4,.aside5{
+        display: none;
+    }
+    .left-side,.aside1{
+        width: 100%;
+    
+    }
+    .right-side{
+        width: 100%;
+    }
+    .img{
+        width: 20%;
+    }
+    .text{
+        padding: 0px 5px 5px 5px;
+    
+    }
+    .text h2,.ptext,.ptext2{
+        padding: 10px;
+    }
+}

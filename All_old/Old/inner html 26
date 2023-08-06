@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.iz{
+    background-color: darkgreen;
+    width: 200px;
+    height: 200px;
+    transform: translate(0px, 200px);
+border-radius: 20px;
+}
+.oz{
+  font-size: 17px;
+  padding-left: 20px;
+  
+  color: rgba(229, 225, 252, 0.5);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+.btn{
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    color: rgb(141, 26, 32);
+    border-radius: 5px;
+    box-shadow:  3px 3px 8px 0px rgb(243, 234, 233);
+    outline:2px solid rgb(37, 240, 11);
+}
+    </style>
+</head>
+<body>
+   <div class="iz">
+<p class="oz">Click the my Location button below to get your location</p>
+<button class="btn">My location</button>
+   </div> 
+   <script>
+let text=document.querySelector(".oz");
+let btn=document.querySelector(".btn");
+
+bnt.addEventListener("click",()=>{
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(geoLocation)
+    }else{
+        text.innerText="something is wrong..."
+    }
+    const geoLocation=async(position)=>{
+ let response=await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&format=json`)
+  let data= await response.json();
+  console.log(data);
+  text.innerText=`${data.address.state}`;
+}
+})
+
+
+
+</script>
+</body>
+</html>

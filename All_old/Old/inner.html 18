@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="iz"></div>
+   <script>
+//let iz=document.querySelector(".iz");
+//let list="";
+//let letters=["i","y","o","q","a","z","h"]
+//for(let x of letters){
+ //   list+="<li>"+x+"</li>"
+//}
+//iz.innerHTML=list;
+//let li=document.createElement("li");
+//li.innerHTML=x;
+//iz.appendChild(li);
+//}
+document.getElementById("iz").innerHTML=["q","w","y"].map(x=>`<li>${x}</li>`).join("")
+   </script>
+</body>
+</html>

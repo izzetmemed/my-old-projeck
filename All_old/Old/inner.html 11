@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+button:active{
+   transform: scale(0.3); 
+   transition: 0.9s;
+}
+
+    </style>
+</head>
+
+<body>
+    
+  <p id="demo" ></p> 
+    <button class="btn">change color</button>
+    
+    <script>
+  const btn=document.querySelector(".btn");
+  const body=document.querySelector("body");
+
+  var colors=["red","pink","yellow","white","blue","green"];
+  body.style.background="orange";
+  btn.addEventListener("click",addColor);
+  function addColor() {
+    console.log("clicked");
+    var color=parseInt(Math.random()*colors.length);
+    body.style.background=colors[color];
+    count++;
+  }
+</script>
+</body>
+</html>

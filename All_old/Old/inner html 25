@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.lab{
+    display: block;
+    float: right;
+    margin: 50px;
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.iz{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgb(16, 228, 157);
+border-radius: 5px ;
+height: 20px;
+width: 40px;
+
+}
+.iz::before{
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 5px;
+top: 1px;
+border-radius: 50%;
+background-color: blue;
+transition: .4s;
+}
+input:checked + .iz{
+background-color: rgb(22, 240, 51);
+}
+input:checked + .iz::before{
+    left: 20px;
+    background-color: darkorange;
+}
+.oz{
+    background-color: antiquewhite;
+}
+</style>
+<body>
+    <label class="lab">
+        <input type="checkbox" id="put"/>
+        <span class="iz"></span>
+    </label>
+    <script>
+const span=document.querySelector(".put");
+const sp=document.querySelector(".iz");
+const big=document.getElementsByTagName("body")
+sp.addEventListener("click",()=>{
+    big.style.background="white"
+})
+    </script>
+</body>
+</html>

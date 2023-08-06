@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+  body{
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }  
+.oz{
+display: grid;
+place-content: center;
+text-align: center;
+height: 250px;
+width: 250px;
+background-color: aquamarine;
+color: black;
+border-radius: 16px;
+gap: 5px;
+padding: 10px;
+pointer-events:none;
+}
+.uz{
+   font-size: 15px; 
+   padding: 20px;
+}
+.iz{
+  height: 20px;  
+  width: 250px;
+  border: 2px solid slateblue;
+
+}
+.az{
+display: grid;
+gap: 5px;
+flex-direction:row;
+}
+.btn{
+    background-color: greenyellow;
+    height: 30px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.btn:hover{
+    filter: brightness(3.2);
+}
+.iz:valid~.btn{
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+    <div class="oz">
+<h1>Download</h1>
+<p class="uz">You can download anything just copy url here</p>
+<form class="az">
+<input class="iz" type="url"  placeholder="Copy url here" required/>
+<button class="btn">Download</button>
+</form>
+    </div>
+    <script>
+const input=document.querySelector(".iz");
+const btn =document.querySelector(".btn");
+btn.addEventListener("click",(x)=>{
+x.defaultPrevented();
+btn.innerHTML="downloading.."
+ fetchURL(input.value); 
+})
+async function fetchURL(url){
+    try{
+const data= await fetch(url);
+const blob=await data.blob()
+const link=URL.createObjectURL(blob)
+const aTag=document.createElement("a");
+aTag.href=link;
+aTag.download="thank"
+document.body.appendChild(aTAg);
+aTag.click();
+btn.innerHTML="finished";
+URL.revokeObjectURL(link);
+aTag.remove();
+    }catch{
+        alert("wrong")
+    }
+}
+
+
+    </script>
+</body>
+</html>

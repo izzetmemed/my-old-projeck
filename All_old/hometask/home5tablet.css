@@ -1,0 +1,18 @@
+@media (max-width:768px){
+.right-side-bar{
+    display: none;
+}
+.nav-bar{
+    height: 9.3%;
+}
+.page-2{
+    height: 180%;
+}
+.page-2-div{
+    margin-top: 100px;
+
+ }
+ .btn1{
+    margin-top: 10px;
+ }
+}

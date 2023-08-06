@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 134, 29);
+}
+.big{
+    background-color: bisque;
+    width: 230px;
+    height: 200px;
+}
+.iz{
+    color: black;
+
+}
+.uz{
+    transform: translate(20px,20px);
+    display: flex;
+    gap: 10px;
+}
+.ez{
+    height: 30px;
+    width: 90px;
+}
+.oz{
+    width: 90px;
+    height: 36px;
+}
+.mz{
+    text-align: center;
+    color: black;
+}
+.rey{
+    color: black;
+    position: relative;
+    left: 90px;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+   <div class="big" >
+<div class="iz">
+<header>Guess 1 number between 1 and 100</header><br><br>
+<span  class="rey"></span>
+</div>
+<div class="uz">
+<input  class="ez" type="number"  />
+<button type="button" class="oz">Check</button>
+</div>
+<br>
+<p class="mz">you have <span class="chance">10</span> chances</p>
+   </div>
+<script>
+   
+    let input=document.querySelector(".ez");
+    let btn=document.querySelector(".oz");
+    let number=document.querySelector(".rey");
+    let chance=document.querySelector("chance");
+let random=Math.floor(Math.random()*100);
+ chance.value=10;
+ btn.addEventListener("click",()=>{
+    chance.textContent-=1;
+    if(input.value==random){
+        number.textContent="congratulation"
+
+    }else if(input.value>random && input.value<100){
+        number.textContent="high"
+    }
+    else if(input.value<random && input.value>0){
+        number.textContent="low"
+    }else{
+    number.textContent="error";
+    number.style.color="red"
+ }
+ if (chances<0){
+    window.location.reload();
+ }
+ })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div class="w-100  d-flex justify-content-center" style="height: 1800px; background-color: rgb(71, 69, 69);">
+    <div class=" h-auto bg-light " style="width: 80%;">
+
+      <h1 class="text-center">Xoş gəldiniz.</h1>
+      <p class="text-center text-danger">Evinizi satmaq üçün zəhmət olmazsa aşağıdakı boxşluqları doldurun!!!</p>
+<div class="w-100 h-25 bg-info" >
+ <div class=" ps-3 h-75 bg-danger d-flex flex-wrap gap-2 pt-3">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+   <img class=" bg-success" src="" alt="" style="height: 45%; width: 24%;">
+
+  
+ </div>
+
+ <input type="file" multiple>
+</div>
+<script>
+  let image=document.querySelectorAll("img");
+  let input=document.querySelector("input");
+
+  input.addEventListener("change", () => {
+    
+      let i=0;
+      let iz=function(i){
+        i+=1;
+        return i;
+      }
+      image[iz()].src=URL.createObjectURL(input.files[0]);
+    });
+   
+ 
+ 
+     </script>   
+
+      <br>
+      <br>
+      <div>
+        <div class="form-check">
+         <br><br>
+        </div>
+
+        <div class="w-60 m-2">
+          <div class="form-floating mb-3">
+            <input type="number" class="put form-control" id="floatingInput" required  >
+            <label for="floatingInput">Evin qiyməti:</label>
+          </div>
+          <div class="form-floating">
+            <input type="number" class="form-control" id="floatingPassword" required>
+            <label for="floatingPassword">Evin sahəsi:</label>
+          </div>
+          <br>
+          <label for="floatingInput" class="m-2 " style="opacity: 0.7;">Eviniz hansı rayonda yerləşir?</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Nesimi Rayon</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">One</option>
+            <option value="5">Two</option>
+            <option value="6">Three</option>
+            <option value="7">One</option>
+            <option value="8">Two</option>
+            <option value="9">Three</option>
+            <option value="10">One</option>
+            <option value="11">Two</option>
+            <option value="12">Three</option>
+            <option value="13">One</option>
+            <option value="14">Two</option>
+            <option value="15">Three</option>
+            <option value="16">Three</option>
+            <option value="17">Three</option>
+            <option value="18">Three</option>
+            <option value="19">Three</option>
+            <option value="20">Three</option>
+          </select>
+          <br>
+          <div class="form-floating mb-3">
+            <input type="text" class="put form-control" id="floatingInput" required>
+            <label for="floatingInput">Evin dəqiq ünvanı </label>
+          </div>
+          <label for="floatingInput" class="m-2 " style="opacity: 0.7;">Eviniz hansı metroya yaxındır?</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Metroya yaxın deyil</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">One</option>
+            <option value="5">Two</option>
+            <option value="6">Three</option>
+            <option value="7">One</option>
+            <option value="8">Two</option>
+            <option value="9">Three</option>
+            <option value="10">One</option>
+            <option value="11">Two</option>
+            <option value="12">Three</option>
+            <option value="13">One</option>
+            <option value="14">Two</option>
+            <option value="15">Three</option>
+            <option value="16">Three</option>
+            <option value="17">Three</option>
+            <option value="18">Three</option>
+            <option value="19">Three</option>
+            <option value="20">Three</option>
+          </select>
+          <br>
+          <div class="form-floating">
+            <input type="text" class="put form-control" id="floatingPassword" required>
+            <label for="floatingPassword">Eviniz neçə otaqlıdır?</label></div>
+
+
+          <br>
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Eviniz bina evidir?
+          </label>
+          <br><input class="put form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Eviniz həyət evidir?
+          </label>
+          <br>
+          <br>
+          <div class="form-floating">
+            <input type="text" class="put form-control" id="floatingPassword" required>
+            <label for="floatingPassword">Əgər eviniz bina evidirsə, neçənci mərtəbədə yerləşir?</label></div>
+
+          <br>
+          
+        
+          <div class="form-floating mb-3">
+            <input type="text" class="put form-control" id="floatingInput" required>
+            <label for="floatingInput">Ev sahibinin adı və Soyadı:</label>
+          </div>
+          <div class="form-floating">
+            <input type="number" class="put form-control" id="floatingPassword" required>
+            <label for="floatingPassword">Ev sahibinin nömrəsi:</label>
+          </div>
+          <br>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2"> Ev haqqında əlavə məlumat yaza bilərsiniz.</label>
+          </div>
+          <br>
+          <div class="d-grid gap-2">
+            <button class="btn btn-danger" type="button">Button</button>
+            <br>
+            <span class="text1 text-center text-danger"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    let cavab=document.querySelectorAll(".put");
+    let xeber=document.querySelector(".text1");
+    let btn=document.querySelector(".btn");
+    btn.addEventListener("click",()=>{
+     
+      if(cavab[ "0","1","2","3","4","5"].value==""){
+      xeber.innerHTML="Yuxarıdakı boşluqları doldurun!!!";
+    }
+  else {
+    xeber.innerHTML="Qəbul edildi.";
+  }
+  })
+    
+  </script>
+</body>
+
+</html>

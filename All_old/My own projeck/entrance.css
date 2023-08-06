@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+.big-container{
+    height: auto;
+}
+.center{
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 70%;
+}
+.name-text p{
+color:dimgray;
+padding: 3%;
+}
+.over-part{
+    padding-top: 30px;
+    margin: 30px;
+}
+.second{
+background-color: aqua;
+margin: 5%;
+padding-top: 30px;
+}
+.btn a{
+text-decoration: none;
+color: aliceblue;
+}
+.btn{
+    width: 30%;
+    height: 10%;
+}
+
+
+
+  
+
+  
+  
+@media(max-width:2581px){
+    .btn{
+        width: 40%;
+        height: 20%;
+    }
+    .btn a{
+        font-size: 215%;
+    }
+    .center{
+        width: 43% !important;
+        height: 40%;
+    }
+}
+@media(max-width:1581px){
+    .btn{
+        width: 40%;
+        height: 20%;
+    }
+    .btn a{
+        font-size: 155%;
+    }
+    .center{
+        width: 63% !important;
+        height: 70%;
+    }
+}
+    @media(max-width:1281px){
+        .btn{
+            width: 48%;
+            height: 15%;
+        }
+        .btn a{
+            font-size: 115%;
+        }
+        .center{
+            height: 65%;
+        }
+    }
+  
+    @media(max-width:1051px){
+        .btn{
+            width: 48%;
+            height: 17%;
+        }
+        .btn a{
+            font-size: 95%;
+        }
+        .center{
+            height: 75%;
+        }
+    }   @media(max-width:1031px){
+        .btn{
+            width: 48%;
+            height: 15%;
+        }
+        .btn a{
+            font-size: 115%;
+        }
+        .center{
+            height: 85%;
+        }
+    }@media(max-width:950px){
+        .btn{
+            width: 40%;
+            height: 20%;
+        }
+        .btn a{
+            font-size: 120%;
+        }
+        .center{
+            height: 44%;
+        }
+    }     @media(max-width:851px){
+        .btn{
+            width: 40%;
+            height: 20%;
+        }
+        .btn a{
+            font-size: 170%;
+        }
+        .center{
+            height: 44%;
+                    }}
+        @media(max-width:821px){
+            .btn{
+                width: 40%;
+                height: 15%;
+            }
+            .btn a{
+                font-size: 130%;
+            }
+            .center{
+                height: 50%;
+            }
+    } @media(max-width:768px){
+        .btn{
+            width: 40%;
+            height: 20%;
+        }
+        .btn a{
+            font-size: 140%;
+        }
+        .center{
+            height: 63%;
+        }
+    } 
+    @media(max-width:551px){
+        .btn{
+            width: 48%;
+            height: 15%;
+        }
+        .btn a{
+            font-size: 95%;
+        }
+        .center{
+            height: 50%;
+        }
+        h1{
+            font-size: 130% !important;
+        }
+    }
+@media(max-width:491px){
+    .btn{
+        width: 48%;
+        height: 15%;
+    }
+    .btn a{
+        font-size: 95%;
+    }
+    .center{
+        height: 50%;
+    }
+}
+  @media(max-width:421px){
+    .btn{
+        width: 48%;
+        height:13%;
+    }
+    .btn a{
+        font-size: 55%;
+    }
+    .center{
+        height: 40%;
+    }
+    h1{
+        font-size: 100% !important;
+    }
+}@media(max-width:390px){
+    .btn{
+        width: 48%;
+        height: 15%;
+    }
+    .btn a{
+        font-size: 65%;
+    }
+    .center{
+        height: 36%;
+    }
+    h1{
+        font-size: 80% !important;
+    }
+}
+@media(max-width:376px){
+    .btn{
+        width: 48%;
+        height: 15%;
+    }
+    .btn a{
+        font-size: 65%;
+    }
+    .center{
+        height: 50%;
+    }
+    h1{
+        font-size: 80% !important;
+    }
+}
+@media(max-width:370px){
+    .btn{
+        width: 48%;
+    }
+    .btn a{
+        font-size: 6 0%;
+    }.center{
+        height: 50%;
+    }
+    h1{
+        font-size: 90% !important;
+    }}
+    @media(max-width:320px){
+        .btn{
+            width: 100%;
+            height: 12%;
+        }
+        .btn a{
+            font-size: 60%;
+        }.center{
+            height: 70%;
+        }
+        h1{
+            font-size: 70% !important;
+        }}
+    @media(max-width:290px){
+    .btn{
+        width: 40%;
+        height: 10%;
+    }
+    .btn a{
+        font-size: 20%;
+    }
+    .center{
+        height: 40%;
+    }
+    h1{
+        font-size: 60% !important;
+    }
+}

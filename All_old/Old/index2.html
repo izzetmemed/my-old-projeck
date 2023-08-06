@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+.big{
+    background-color: rgb(14, 115, 204);
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    border-radius: 9px;
+    padding: 10px;
+}
+.btn1{
+    padding: 10px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 10px;
+    color: rgb(16, 77, 192);
+    position: absolute;
+    left: 35%;
+    bottom:10%;
+}
+h1{
+    padding-left: 50px;
+}
+.text{
+    padding-left: 50px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+</style>
+    </head>
+    <body>
+       <div class="big">
+<h1>try not to laugh</h1>
+<p class="text">joke...</p>
+      <div class="btn">
+<button class="btn1">Change it</button>
+
+      </div>
+       </div>
+       <script>
+let joke=document.querySelector("text");
+let button=document.querySelector("btn1")
+
+button.addEventListener("click", ()=>{
+fetch("https://icanhazdadjoke.com/",{
+    headers:{
+        'acceptable':'application/myjson'
+    }
+}).then(function(respone){
+    return respone.myjson();
+}).then(function(data){
+    const jok=data.jok
+    joke.innerText=jok
+})}
+)
+
+
+
+       </script>
+    </body>
+    </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insert Images</title>
+</head>
+<body>
+  <h1>Insert Images</h1>
+  <form>
+    <input type="file" id="files" name="files[]" multiple accept="image/*">
+    <button type="submit">Submit</button>
+  </form>
+  <div id="preview"></div>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var files = document.querySelector('#files').files;
+      var previewContainer = document.querySelector('#preview');
+
+      for (var i = 0; i < files.length && i < 10; i++) {
+        var file = files[i];
+        if (!file.type.match('image.*')) {
+          continue; // Skip non-image files
+        }
+
+        var reader = new FileReader();
+        reader.onload = (function(theFile) {
+          return function(e) {
+            var img = document.createElement('img');
+            img.src = e.target.result;
+            img.alt = theFile.name;
+            img.width = 200;
+            previewContainer.appendChild(img);
+          };
+        })(file);
+
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.big{
+width: 500px;
+min-height: 200px;
+background-color: rgb(78, 2, 34);
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction:column;
+border-radius: 20px;
+box-shadow: 5px 9px 9px bisque;
+}
+.joke{
+
+    text-align: center;
+    color: bisque;
+    text-shadow: 2px 2px 20px  gold;
+    font-weight: 500;
+    opacity: 0;
+}
+.fade{
+opacity: 1;
+transition: opacity 1.5s;
+
+}
+.btn{
+padding: 10px 25px;
+margin-top: 20px;
+font-weight: bold;
+cursor: pointer;
+position: relative;
+}
+.btn:active{
+    position: relative;
+    top: 5px;
+    left: 5px;  
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="big"><p class="joke">Click it and generate your joke</p>
+    <button class="btn">click me</button>
+    </div>
+    <script>
+const btn=document.querySelector(".btn");
+const joke=document.querySelector(".joke");
+var url="https://v2.jokeapi.dev/joke/Any?type=single&amount=1";
+
+btn.addEventListener("click", myFunction)
+async function myFunction(){
+joke.classList.remove("fade");
+const data= await fetch(url).then((e) =>e.json());
+if (data){
+console.log(data);
+joke.innerHTML=data.joke;
+joke.classList.add("fade");
+
+
+}
+
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: red;
+}
+html{
+    font-size: 16px;
+}
+div{
+    font-size: 16px;
+    max-width: 50vw;
+    height: 50vh;
+    max-height: 50vh;
+    background-color: aquamarine;
+}
+p{
+font-size: 2em;
+padding: 1em;
+}
